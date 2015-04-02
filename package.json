@@ -1,6 +1,6 @@
 {
   "name": "page-pipe",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "pass pages through a pipeline to extract information from them",
   "keywords": [],
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
