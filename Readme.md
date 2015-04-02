@@ -5,9 +5,15 @@
 
 ## Current plugins
 
-- Alchemy
-- Readability
-- Tika
+- [Alchemy](http://www.alchemyapi.com/)
+- [Readability](http://readability.com/developers/api/parser)
+- [Tika](https://tika.apache.org)
+
+## Installation
+
+```
+npm install page-pipe
+```
 
 ## API
 
@@ -26,9 +32,9 @@ pagepipe('http://en.wikipedia.org/wiki/Sloth', function(err, data) {
 
 ## Test server-side example
 
-[`GET http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth`]()
+[`GET http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth`](http://news.lapwinglabs.com/http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth)
 
-
+If you abuse this endpoint, I will take it down ;-)
 
 ## License
 

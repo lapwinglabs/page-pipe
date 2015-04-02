@@ -6,18 +6,13 @@ var debug = require('debug')('page-pipe:tika');
 var concat = require('concat-stream');
 var assign = require('object-assign');
 var request = require('request');
+var assert = require('assert');
 
 /**
  * Export `tika`
  */
 
 module.exports = Tika;
-
-/**
- * Default API endpoint
- */
-
-var api = 'http://tika.mat.io/meta';
 
 /**
  * Attach `tika` information
@@ -27,11 +22,12 @@ var api = 'http://tika.mat.io/meta';
 
 function Tika(options) {
   options = options || {};
-  options.url = options.url || api;
+  options.url = options.url;
+  assert(options.url, 'Tika requires a configured server url: http://wiki.apache.org/tika/TikaJAXRS');
 
   function tika(ctx, fn) {
     var opts = {
-      url: options.url,
+      url: options.url + '/meta',
       headers: {
         'Accept': 'application/json',
         'Content-Type': ctx.url
