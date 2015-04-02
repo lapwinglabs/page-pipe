@@ -19,9 +19,9 @@ npm install page-pipe
 
 ```js
 pagepipe = Pagepipe()
-  .use(readability({ key: API_KEY }))
-  .use(alchemy({ key: API_KEY }))
-  .use(tika());
+  .use(readability({ key: READABILITY_API_KEY }))
+  .use(alchemy({ key: ALCHEMY_API_KEY }))
+  .use(tika({ url: TIKA_SERVER ));
 
 
 pagepipe('http://en.wikipedia.org/wiki/Sloth', function(err, data) {
