@@ -30,12 +30,6 @@ pagepipe('http://en.wikipedia.org/wiki/Sloth', function(err, data) {
 })
 ```
 
-## Test server-side example
-
-[`GET http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth`](http://news.lapwinglabs.com/http://en.wikipedia.org/wiki/Sloth)
-
-If you abuse this endpoint, I will take it down ;-)
-
 ## License
 
 (The MIT License)
